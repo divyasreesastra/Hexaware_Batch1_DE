@@ -1,0 +1,6 @@
+Youtube video analysis project dataset taken from Kaggle 
+
+Link:
+ https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset/data?select=IN_youtube_trending_data.csv
+
+As the size is large we are sharing the dataset link for reference.
