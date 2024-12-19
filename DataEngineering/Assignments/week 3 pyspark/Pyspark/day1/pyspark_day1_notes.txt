@@ -1,0 +1,83 @@
+CHaracteristics of Big Data
+Data Quantity---Volume
+Data Speed---Velocity
+Data types---Variety
+
+
+Apache Hadoop software lib is a framework that allows for distributed processing of larger datasets across clusters of computers
+
+Designed to scale up from single servers to thousands providing local computation and storage
+
+For high availability rather than relying on hardware at application level.
+
+Apache Spark Architecture:
+
+The component of data is Resilient Distributed dataset(RDD)
+
+Spark SQL
+
+data sources:avro,paraquet,json,orc
+ 
+Spark will get installed in databrick cluster
+
+Dataset is converted into dataframe and then to RDD by spark program.
+Rdd gets stored in spark core in Databrick
+
+
+Spark Sql Architecture:
+
+Spark is supported by Api like spark,scala,python
+
+--------------------Lunch break----------
+Features of Spark Sql
+
+1.Integrated
+Mix sqlqueries with spark programs
+2.Unified Data Access
+Load and query data from a variety of sources
+3.Hive Compatibility
+4.Standard Connectivity
+5.Scalability
+Same engine for both interactive and long queries
+
+
+cluster---Group of machines(vm) that runs sparkand its connected to DataWarehouse
+Ex: azure databricks,hadoop
+setup spark cluster on azure databrick--adb session
+spark cluster in opensource
+
+
+Spark RDD
+RDD fundamental data structure of Spark
+RDD is read only, partitioned collection of records
+It is created through deterministic operations on data or other rdds.
+2 methods to create:
+1.Parallelizing existing collection in driver program
+2.Referencing dataset in external storage system
+	Usually datasets come from different data sources like storage accounts, lakes, hbase, hdfs (Hadoop distributed file system),fs(file system).These datasets are connected through spark cluster
+
+RDD usage in spark achieves faster and efficient MapReduce operations.
+MapReduce algorithm to retrieve faster RDDs
+For every word in sentence, It assigns a value
+
+
+Spark Cluster
+	Single node spark cluster---one machine with 14 gb ram and 14 gb memory with spark installed
+	Two node spark Cluster---Two machines with launching cluster with spark installed
+
+got a input of dataset--load the sataset --spark rdd program to convert dataset to RDD
+
+IN ANY  node data can be stored.
+
+
+-------------
+Data set and DataFrame
+A distributed collection of dataorganized into named columns---DataFrame similar to relational tables.
+Dataframe can be constructed from array
+Distributed collection of data--Dataset
+dataset--->RDD--->Dataframe
+
+
+--Features of Dataframe
+
+

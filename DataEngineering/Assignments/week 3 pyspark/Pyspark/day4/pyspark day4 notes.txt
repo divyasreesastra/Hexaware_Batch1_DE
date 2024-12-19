@@ -1,0 +1,44 @@
+
+Read Text file into PySpark Dataframe
+There are three ways to read text files into PySpark DataFrame.
+● Using spark.read.text()
+● Using spark.read.csv()
+● Using spark.read.format().load()
+
+
+Adding new column with Constant value
+Syntax:
+dataframe.withColumn("column_name", lit(value))
+where,
+● dataframe is the pyspark input dataframe
+● column_name is the new column to be added
+● value is the constant value to be assigned to this column
+
+Concat two existing columns
+
+dataframe.withColumn(“column_name”,
+concat_ws(“Separator”,”existing_column1′′,’existing_column2′))
+where,
+● dataframe is the input dataframe
+● column_name is the new column name
+● existing_column1 and existing_column2 are the two columns to be
+added with Separator to make values to the new column
+● Separator is like the operator between values with two columns
+
+
+
+
+
+-----------------------------------
+sparksql intro
+
+step1
+Create spark session which is entry into spark appln
+spark sql is supported by scala and java only
+spark is supported by java,R, scala, python
+
+--->Data Frame is dataset organized into named columns
+
+
+Spark sql brings native sql queries
+
